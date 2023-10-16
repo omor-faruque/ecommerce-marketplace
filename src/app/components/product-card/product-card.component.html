@@ -1,0 +1,32 @@
+<div class="card" *ngIf="product">
+    <img [src]="product.image" alt="Product Image">
+    <div class="card-content">
+        <h2 class="product-name">{{product.name}}</h2>
+        <!-- <p class="ff-Courier-New">Product ID: {{product.id}}</p> -->
+        <!-- <p class="ff-Poppins">Category: {{product.categoryName}}</p> -->
+        <p class="product-price ff-Courier-New">${{product.price}}</p>
+        <p class="product-description">{{product.description}}</p>
+        <div class="ta-center">
+            <!-- <button class="styled-button m-10" (click)="emitDeleteProductEvent(product.id)">Delete</button>
+            <button class="styled-button m-10" (click)="emitUpdateProductEvent(product)">Update</button> -->
+        </div>
+
+        <div class="row">
+            <div class="quantity ml-8">
+                <button class="minus" (click)="decreaseQuantity()">&minus;</button>
+                <input type="number" class="input-box" [(ngModel)]="quantity" min="0">
+                <button class="plus" (click)="increaseQuantity()">&plus;</button>
+            </div>
+
+            <div class="add-to-cart ff-Courier-New">
+                <button class="styled-button" (click)="addToCart()">Add to cart</button>
+            </div>
+
+        </div>
+        
+
+        
+
+
+    </div>
+</div>

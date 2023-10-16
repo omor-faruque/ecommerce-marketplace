@@ -1,1 +1,79 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.m-10 {
+    margin: 10px;
+}
+
+.mt-16 {
+    margin-top: 16px;
+}
+
+.mb-16 {
+    margin-bottom: 16px;
+}
+
+.mr-16 {
+    margin-right: 16px;
+}
+
+.ml-16 {
+    margin-left: 16px;
+}
+
+.ml-8 {
+    margin-left: 8px;
+}
+
+.ff-Faster-One {
+    font-family: 'Faster One', sans-serif;
+}
+
+.ff-Courier-New {
+    font-family: 'Courier New', sans-serif;
+}
+
+.ff-Poppins {
+    font-family: Poppins, sans-serif;
+}
+
+.ff-Basic {
+    font-family: Baisc, sans-serif;
+}
+
+.ta-center {
+    text-align: center;
+}
+
+.styled-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #000;
+    /* Black background color */
+    color: #fff;
+    /* White text color */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.b-1-s-grey {
+    border: 1px solid gray;
+}
+
+.p-8 {
+    padding: 8px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+}

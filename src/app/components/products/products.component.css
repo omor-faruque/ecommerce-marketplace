@@ -1,0 +1,5 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* Wrap items to the next row when they overflow */
+    justify-content: start; /* Distribute items evenly with space between */
+}
