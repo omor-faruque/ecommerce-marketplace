@@ -1,0 +1,75 @@
+<div class="container mt-48">
+    
+
+    <div class="row-flex mt-24 j-c-space-between" *ngIf="!orderSubmitted">
+        <div class="c-md-6">
+            <h3 class="mb-16">Checkout</h3>
+            <form *ngIf="!showshippingAddressForm">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Name" [(ngModel)]="name">
+                </div>
+                <div class="input-field mt-16">
+                    <input type="email" id="email" name="email" placeholder="Email Address" [(ngModel)]="email">
+                </div>
+                <button type="submit" class="styled-button b-v-1 mt-16 w-100" (click)="continueAfterNameAndEmail()">Continue</button>
+            </form>
+
+
+            <form *ngIf="showshippingAddressForm">
+                <div class="form-group">
+                    <input type="text" id="street" name="street" placeholder="Street" [(ngModel)]="shippingAddress.street">
+                </div>
+                <div class="form-group">
+                    <input type="text" id="city" name="city" placeholder="City" [(ngModel)]="shippingAddress.city">
+                </div>
+                <div class="form-group">
+                    <input type="text" id="postalcode" name="postalcode" placeholder="Postal Code" [(ngModel)]="shippingAddress.postalCode">
+                </div>
+                <div class="form-group">
+                    <input type="text" id="country" name="country" placeholder="Country" [(ngModel)]="shippingAddress.country">
+                </div>
+                <button type="submit" class="styled-button b-v-1 mt-16 w-100 bg-green" (click)="submitOrderClicked()">Submit Order</button>
+            </form>
+
+
+
+        </div>
+        <div class="c-md-5 ml-24">
+            <h4 class="ta-center">Your Bag</h4>
+
+            <div class="container row-flex mt-16 ">
+                <div class="b-1-s-grey">
+                    <ng-container *ngFor="let item of cartItems">
+                        <div class="mb-16">
+                            <div class="p-8 ff-Courier-New row-flex p-16">
+            
+                                <div class="c-md-6">
+                                    <img [src]="item.product.image" [alt]="item.product.name" width="120px">
+                                </div>
+                                <div class="c-md-6 pl-16">
+                                    <p class="ff-Bungee-Inline">{{item.product.name}} </p>
+                                    <p>Price: {{item.product.price}}</p>
+                                    <p>Quantity: {{item.quantity}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </ng-container>
+                </div>
+                <div class="ff-Courier-New">
+                    <p class="mt-16 f-size-24">Subtotal: ${{totalAmount.toFixed(2)}} CAD</p>
+                    <!-- <div>
+                        <button class="styled-button bg-c-green">Continue to Checkout</button>
+                    </div> -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row" *ngIf="orderSubmitted">
+        <h2>Order Successfully Submitted</h2>
+    </div>
+
+
+
+</div>

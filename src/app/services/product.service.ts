@@ -11,7 +11,7 @@ export class ProductService {
   constructor(private http:HttpClient) { }
 
   getAllProducts():Observable<Product[]> {
-    return this.http.get<Product[]>("http://localhost:8080/api/products-with-category");
+    return this.http.get<Product[]>("http://localhost:8080/api/public/products");
   }
 
 }

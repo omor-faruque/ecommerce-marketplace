@@ -1,0 +1,33 @@
+
+<div class="container row-flex mt-16 ">
+    <div class="c-12">
+        <h3 class="mt-16 mb-16 ff-Courier-New fw-bold ">Your Items</h3>
+    </div>
+    <div class="col-md-6">
+        <ng-container *ngFor="let item of cartItems">
+            <div class="mb-16">
+                <div class="b-1-s-grey p-8 ff-Courier-New row-flex p-16">
+
+                    <div class="c-md-6">
+                        <img [src]="item.product.image" [alt]="item.product.name" width="120px">
+                    </div>
+                    <div class="c-md-6 pl-16">
+                        <p class="ff-Bungee-Inline">{{item.product.name}} </p>
+                        <p>Price: {{item.product.price}}</p>
+                        <p>Quantity: {{item.quantity}}</p>
+                        <button *ngIf="item.product.id" class="styled-button bg-c-black" (click)="deleteProduct(item.product.id)">Remove</button>
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+
+
+    <div class="ml-16 pl-16 ff-Courier-New">
+        <p class="mt-16 f-size-32">Subtotal: ${{totalAmount.toFixed(2)}} CAD</p>
+        <p class="mt-16 f-size-24">Number of Items: {{totalItems}}</p>
+        <div *ngIf="cartItems.length>0">
+            <button class="styled-button bg-c-green" [routerLink]="'/checkout'">Continue to Checkout</button>
+        </div>
+    </div>
+</div>
