@@ -1,27 +1,45 @@
-<header class="p-3 text-bg-dark">
-    <div class="container">
-      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none mr-16">
-          <img src="assets/images/favicon/android-chrome-512x512.png" width="40" alt="" srcset="">
-        </a>
+<!-- header -->
+<header class="pt-24 pb-24 position-fixed w-100 bb">
+  <div class="container row justify-content-space-between">
+    <div class="left-menu">
+      <div class="container pl-12">
+        <a routerLink="/"><img class="avatar" src="assets/images/marketplace.png" alt="Avatar"></a>
+        <a routerLink="products" class="pl-24">Products</a>
+        <a href="#" class="pl-24">FAQs</a>
+        <a href="#" class="pl-24">About</a>
+        <a href="#" class="pl-24">Contact</a>
 
-        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <li><a routerLink="products" class="nav-link px-2 text-white">Products</a></li>
-          <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
-          <li><a href="#" class="nav-link px-2 text-white">About</a></li>
-        </ul>
-
-
-        <div class="text-end">
-          <a routerLink="shopping-bag" class="d-inline-block mr-24">
-            <img src="assets/images/cart-icon-1.png" alt="Cart" width="50">
-            <span class="p-absolute c-white">{{noOfItems}}</span>
-          </a>
-          
-          <button type="button" class="btn btn-outline-light me-2">Login</button>
-          <button type="button" class="btn btn-warning">Sign-up</button>
-        </div>
-        
       </div>
     </div>
-  </header>
+    <div class="text-align-right right-menu">
+      <div class="desktop-menu pr-12">
+        <a routerLink="shopping-bag" class="d-inline-block mr-24">
+          <img src="assets/images/cart-icon-1.png" alt="Cart" width="50">
+          <span class="p-absolute c-white">{{noOfItems}}</span>
+        </a>
+
+        <button type="button" class="btn btn-outline-light me-2">Login</button>
+        <button type="button" class="btn btn-warning">Sign-up</button>
+      </div>
+
+      <div class="mobile-menu">
+        <div class="row justify-content-right header__main-ham-menu-cont pr-16" onclick="toggleMenu()">
+          <img src="/images/ham-menu.svg" alt="hamburger menu" id="menu-open" class="header__main-ham-menu">
+          <img src="/images/ham-menu-close.svg" alt="hamburger menu close" id="menu-close"
+            class="header__main-ham-menu-close d-none">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="position-relative w-100" id="mobile-menu">
+      <div id="menu-content" class="ham-menu-content col-12 w-100 d-none">
+        <a href="#" target="_blank">About</a>
+        <a href="#" target="_blank">Experience</a>
+        <a href="#" target="_blank">Work</a>
+        <a href="#" target="_blank">Contact</a>
+      </div>
+    </div>
+  </div>
+
+</header>
