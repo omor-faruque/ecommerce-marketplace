@@ -11,7 +11,7 @@ export const checkoutGuard: CanActivateFn = (route, state) => {
     return true;
   }
   return router.parseUrl('/shopping-bag');
-  // or any of this 
+  // or any of this
   // return router.navigate(['products']);
   // return router.navigateByUrl('products');
 };

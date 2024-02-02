@@ -52,7 +52,7 @@
     padding: 0;
     height: 49px;
   }
-  
+
   .quantity button {
     background-color: #000;
     color: #fff;
@@ -64,11 +64,11 @@
     text-align: center;
     transition: background-color 0.2s;
   }
-  
+
   .quantity button:hover {
     background-color: #2980b9;
   }
-  
+
   .input-box {
     width: 40px;
     text-align: center;
@@ -77,14 +77,14 @@
     font-size: 16px;
     outline: none;
   }
-  
+
   /* Hide the number input spin buttons */
   .input-box::-webkit-inner-spin-button,
   .input-box::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
   }
-  
+
   .input-box[type="number"] {
     -moz-appearance: textfield;
   }
