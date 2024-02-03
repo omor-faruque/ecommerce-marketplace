@@ -6,6 +6,7 @@
     --grey: #f9f9f9;
     --black: #000;
     --green: #00ff1d;
+    --primary:#253746;
 }
 
 * {
@@ -276,6 +277,16 @@ a {
 
 .bb {
     border-bottom: 1px solid var(--black);
+}
+.bt {
+    border-top: 1px solid var(--black);
+}
+
+.bb-2 {
+    border-bottom: 2px solid var(--black);
+}
+.bt-2 {
+    border-top: 2px solid var(--black);
 }
 
 .display-mobile {
