@@ -33,6 +33,6 @@ export class ProductCardComponent {
       this.cartservice.addToCart(cartItem);
       this.quantity=0;
     }
-    
+
   }
 }

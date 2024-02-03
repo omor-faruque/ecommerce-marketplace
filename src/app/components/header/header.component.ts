@@ -12,6 +12,8 @@ export class HeaderComponent implements OnInit {
 
   noOfItems: number = 0;
 
+  mobileMenuOpenClicked: boolean = false;
+
   ngOnInit(): void {
     this.cartService.cartItemsObservable.subscribe((data: any) => {
       this.noOfItems = data.totalItems;

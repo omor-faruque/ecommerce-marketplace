@@ -25,7 +25,7 @@ export class CheckoutComponent implements OnInit,OnDestroy {
     postalCode: '',
     country: 'Canada'
   };
-  
+
   name: string = '';
   email: string = '';
   orderSubmitted:boolean=false;
@@ -46,7 +46,7 @@ export class CheckoutComponent implements OnInit,OnDestroy {
   continueAfterNameAndEmail() {
     if (this.name.trim().length !==0 && this.email.trim().length!==0) {
       this.showshippingAddressForm=true;
-      
+
     } else {
       alert("Invalid information")
     }
@@ -60,7 +60,7 @@ export class CheckoutComponent implements OnInit,OnDestroy {
       totalAmount: this.totalAmount,
       shippingAddress: this.shippingAddress
     }
-    
+
     this.orderService.submitOrder(order)
     .pipe(takeUntil(this.ngUnsubscribe))
     .subscribe((res:Order) => {

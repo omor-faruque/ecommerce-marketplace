@@ -1,37 +1,42 @@
 <!-- header -->
-<header class="pt-24 pb-24 w-100 bb">
-  <div class="container row justify-content-space-between">
+<header class="w-100 bb">
+  <div class="container row justify-content-space-between p-16">
     <div class="left-menu">
       <div class="container row align-items-center pl-12">
         <a routerLink="/"><img class="marketplace"  width="30" src="assets/images/marketplace.png" alt="marketplace"></a>
         <a routerLink="products" class="pl-24">Products</a>
-     
         <a href="#" class="pl-24">About</a>
         <a href="#" class="pl-24">Contact</a>
-
       </div>
     </div>
     <div class="right-menu">
       <div class="desktop-menu row align-items-center justify-content-right pr-12">
-        <a routerLink="shopping-bag" class="d-inline-block mr-24">
+        <a routerLink="shopping-bag" class="position-relative">
           <img src="assets/images/shopping-bag.png" alt="Cart" width="30">
-          <span class="p-absolute c-white">{{noOfItems}}</span>
+          <span class="p-absolute" class="cart-qty">{{noOfItems}}</span>
         </a>
-
-        <a class="pl-24">Login</a>
-        <a class="pl-24">Sign-up</a>
+        <a class="pl-24">Sign In</a>
+        <a class="pl-24">Sign up</a>
       </div>
+
+      <div class="mobile-menu">
+        <div class="row justify-content-right header__main-ham-menu-cont pr-16" (click)="mobileMenuOpenClicked=!mobileMenuOpenClicked">
+            <img src="assets/images/ham-menu.svg" alt="hamburger menu" *ngIf="!mobileMenuOpenClicked"
+                class="header__main-ham-menu">
+            <img src="assets/images/ham-menu-close.svg" alt="hamburger menu close" *ngIf="mobileMenuOpenClicked"
+                class="header__main-ham-menu-close">
+        </div>
+    </div>
 
 
     </div>
 
-    <div class="position-relative w-100" id="mobile-menu">
-      <div id="menu-content" class="ham-menu-content col-12 w-100 d-none">
-        <a href="#" target="_blank">About</a>
-        <a href="#" target="_blank">Experience</a>
-        <a href="#" target="_blank">Work</a>
-        <a href="#" target="_blank">Contact</a>
-      </div>
+ 
+  </div>
+  <div *ngIf="mobileMenuOpenClicked" class="position-relative w-100">
+    <div class="ham-menu-content col-12 w-100">
+      <a href="#" class="bt" target="_blank">Sign In</a>
+      <a href="#" target="_blank">Sign up</a>
     </div>
   </div>
 
