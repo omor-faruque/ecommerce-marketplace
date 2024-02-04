@@ -2,6 +2,7 @@ header {
   background-color: var(--grey);
   color: var(--primary);
   font-weight: bold;
+  position: fixed;
 }
 
 header a {
