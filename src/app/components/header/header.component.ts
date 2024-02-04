@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { CartService } from 'src/app/services/cart.service';
 
@@ -18,6 +18,14 @@ export class HeaderComponent implements OnInit {
     this.cartService.cartItemsObservable.subscribe((data: any) => {
       this.noOfItems = data.totalItems;
     })
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    const screenWidth = event.target.innerWidth;
+    if (screenWidth > 690) {
+      this.mobileMenuOpenClicked = false;
+    }
   }
 
 

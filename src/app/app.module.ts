@@ -11,6 +11,7 @@ import { ProductCardComponent } from './components/product-card/product-card.com
 import { FooterComponent } from './components/footer/footer.component';
 import { ShoppingBagComponent } from './components/shopping-bag/shopping-bag.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
+import { HeroBannerComponent } from './components/hero-banner/hero-banner.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CheckoutComponent } from './components/checkout/checkout.component';
     ProductCardComponent,
     FooterComponent,
     ShoppingBagComponent,
-    CheckoutComponent
+    CheckoutComponent,
+    HeroBannerComponent
   ],
   imports: [
     BrowserModule,
