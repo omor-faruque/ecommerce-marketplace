@@ -1,12 +1,12 @@
 
 footer {
   height: auto;
-  background-color: var(--black);
-  color: var(--white);
+  background-color: var(--white);
+  color: var(--primary);
   padding: 70px 0;
 }
 footer a {
-  color: var(--white);
+  color: var(--primary);
   text-decoration: underline;
 }
 .footer-heading {
@@ -29,7 +29,7 @@ footer a {
 
 .copy-right {
   text-align: center;
-  color: var(--white);
+  color: var(--primary);
   font-size: .8rem;
 }
 
