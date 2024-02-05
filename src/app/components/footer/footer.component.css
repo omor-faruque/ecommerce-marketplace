@@ -10,7 +10,7 @@ footer a {
   text-decoration: underline;
 }
 .footer-heading {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin-bottom: 16px;
 }
 .footer-desc {
@@ -25,6 +25,7 @@ footer a {
 }
 .footer-icon img {
   width: 25px;
+  margin-left: 8px;
 }
 
 .copy-right {
