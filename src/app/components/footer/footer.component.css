@@ -10,7 +10,7 @@ footer a {
   text-decoration: underline;
 }
 .footer-heading {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-bottom: 16px;
 }
 .footer-desc {
@@ -28,9 +28,19 @@ footer a {
   margin-left: 8px;
 }
 
+.email-box {
+  width: 85%;
+}
 .s-email {
-  width: 420px;
-  padding: 8px;
+  width: 100%;
+  padding: 12px;
+}
+.r-arrow {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translate(-50%,-50%);
+
 }
 
 .copy-right {
@@ -45,9 +55,9 @@ footer a {
   }
 }
 
-@media (max-width: 690px) {
+/* @media (max-width: 690px) {
 
   .s-email {
     width: 280px;
   }
-}
+} */
