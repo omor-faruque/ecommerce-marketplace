@@ -28,6 +28,11 @@ footer a {
   margin-left: 8px;
 }
 
+.s-email {
+  width: 420px;
+  padding: 8px;
+}
+
 .copy-right {
   text-align: center;
   color: var(--primary);
@@ -37,5 +42,12 @@ footer a {
 @media (min-width: 690px) {
   .footer-content .right-box {
       text-align: right;
+  }
+}
+
+@media (max-width: 690px) {
+
+  .s-email {
+    width: 280px;
   }
 }
