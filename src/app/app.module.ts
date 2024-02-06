@@ -12,6 +12,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ShoppingBagComponent } from './components/shopping-bag/shopping-bag.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
 import { HeroBannerComponent } from './components/hero-banner/hero-banner.component';
+import { HPSectionComponent } from './components/ui/h-p-section/h-p-section.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HeroBannerComponent } from './components/hero-banner/hero-banner.compon
     FooterComponent,
     ShoppingBagComponent,
     CheckoutComponent,
-    HeroBannerComponent
+    HeroBannerComponent,
+    HPSectionComponent
   ],
   imports: [
     BrowserModule,
