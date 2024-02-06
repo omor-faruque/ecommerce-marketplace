@@ -3,6 +3,7 @@ header {
   color: var(--primary);
   font-weight: bold;
   position: fixed;
+  z-index: 1;
 }
 
 header a {
