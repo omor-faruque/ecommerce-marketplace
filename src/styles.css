@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Lobster|Quicksand|Rubik|Bungee|Bungee Shade|Bungee Inline|Roboto Slab|Patua One|Faster One|Open Sans|Cabin|Poppins');
-
 
 :root {
     --white: #fff;
@@ -30,7 +28,7 @@ html {
 
 html,
 body {
-    font-family: monospace;
+    font-family: monospace, serif;
     font-size: 16px;
     line-height: 1.65;
     color: var(--black);
