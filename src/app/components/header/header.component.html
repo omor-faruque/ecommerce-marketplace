@@ -1,5 +1,5 @@
 <!-- header -->
-<header class="w-100">
+<header class="w-100 bb">
   <div class="container row justify-content-space-between p-16">
     <div class="left-menu">
       <div class="container row align-items-center pl-12">
@@ -13,7 +13,7 @@
       <div class="desktop-menu row align-items-center justify-content-right pr-12">
         <a routerLink="shopping-bag" class="position-relative">
           <img src="assets/images/shopping-bag.png" alt="Cart" width="30">
-          <span class="p-absolute" class="cart-qty">{{noOfItems}}</span>
+          <span *ngIf="noOfItems>0" class="p-absolute" class="cart-qty">{{noOfItems}}</span>
         </a>
         <a class="pl-24">Sign In</a>
         <a class="pl-24">Sign up</a>
