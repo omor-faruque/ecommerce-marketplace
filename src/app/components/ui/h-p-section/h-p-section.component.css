@@ -2,3 +2,10 @@
     padding-left: 10%;
     padding-right: 10%;
 }
+
+@media (max-width: 690px) {
+    .h-p {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
