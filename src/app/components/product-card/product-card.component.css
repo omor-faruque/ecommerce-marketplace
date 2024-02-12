@@ -24,20 +24,19 @@
 
 /* Product name styles */
 .product-name {
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 0.9rem;
+    font-weight: 200;
     margin: 0;
 }
 
 /* Product price styles */
 .product-price {
-    color: #007bff; /* Blue color */
-    font-size: 18px;
+  font-size: 0.9rem;
 }
 
 /* Product description styles */
 .product-description {
-    font-size: 14px;
+  font-size: 0.9rem;
     color: #777;
 }
 
@@ -83,8 +82,4 @@
   .input-box::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
-  }
-
-  .input-box[type="number"] {
-    -moz-appearance: textfield;
   }
