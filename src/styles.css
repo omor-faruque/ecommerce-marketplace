@@ -323,3 +323,9 @@ a {
 a {
     cursor: pointer;
 }
+
+button {
+    padding: 16px;
+    border: 1px solid var(--black);
+    width: 100%;
+}
