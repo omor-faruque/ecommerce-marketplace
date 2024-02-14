@@ -324,9 +324,8 @@ a {
     cursor: pointer;
 }
 
-/* button {
+button {
     padding: 16px;
-    background-color: var(--primary);
     border: 1px solid var(--black);
     width: 100%;
-} */
+}
